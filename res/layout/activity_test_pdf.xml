@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLy"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testPdf"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                app:backgroundTint="#0099ff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/hw" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="#FFFFFF"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

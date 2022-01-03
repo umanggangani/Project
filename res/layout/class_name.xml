@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<androidx.cardview.widget.CardView
+
+    android:id="@+id/classCard"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    card_view:contentPadding="8dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="#fff"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/classNameList"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:text="hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"/>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

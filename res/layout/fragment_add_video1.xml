@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addVideo1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <!--  <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Add Video"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/sVideo"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:background="@drawable/blueoutline"
+            />-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:scrollbars="none"
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints" />
+       <!-- <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/videoName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Video Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classlist">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/videoName"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/videoDes1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoName1" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/videoDes"
+                android:maxLines="3"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/videoLink1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Video Link"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoDes1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/videoLink"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/videoDate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Video Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoLink1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/videoDate"
+                android:maxLines="1"
+                android:inputType="date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/startTime1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Start time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoDate1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/endTime1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="End time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoDate1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/addVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:backgroundTint="#A44EADFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startTime1" />-->
+        <EditText
+            android:id="@+id/videoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classlist"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/videoDes"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_border_des"
+            android:ems="10"
+            android:hint="Description"
+            android:padding="16dp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoName" />
+
+        <EditText
+            android:id="@+id/videoLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Link"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoDes" />
+
+        <EditText
+            android:id="@+id/videoDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Video playing Date"
+            android:inputType="date"
+            android:padding="16dp"
+            android:layout_marginRight="16dp"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoLink"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/time"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/videoDate" >
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:hint="Start Time"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:inputType="time"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="End Time"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:inputType="time"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@drawable/round_bg"
+            app:backgroundTint="#0099FF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</FrameLayout>

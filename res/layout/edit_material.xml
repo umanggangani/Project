@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <!-- <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/materialName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Material Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ematerialName"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/materialDes1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialName1" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ematerialDes"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/ematerialName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ematerialDes"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_border_des"
+        android:ems="10"
+        android:hint="Description"
+        android:padding="16dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ematerialName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ematerialDes"
+        tools:layout_editor_absoluteX="25dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_bg"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            app:backgroundTint="#0099FF" />
+
+        <Button
+            android:id="@+id/editHwButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/round_bg"
+            android:text="Edit"
+            android:textAllCaps="false"
+            app:backgroundTint="#0099FF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addTest1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--  <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="25dp"
+              android:text="Add Material"
+              android:textSize="18sp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+          <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:id="@+id/sMaterial"
+              android:layout_marginStart="30dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="30dp"
+              android:layout_marginRight="30dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:background="@drawable/blueoutline"
+              app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:scrollbars="none"
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints" />
+        <!--    <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/materialName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Material Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/classlist">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/materialName"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/materialDes1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Enter Description"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialName1" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/materialDes"
+                    android:maxLines="3"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:textSize="16sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/materialFile1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginRight="90dp"
+                android:ems="10"
+                android:hint="Material File"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialDes1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/materialFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/addMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#A44EADFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialFile1" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialFile1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialFile1"
+                app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24"
+                tools:ignore="VectorDrawableCompat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <EditText
+            android:id="@+id/testName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classlist"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/testDes"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_border_des"
+            android:ems="10"
+            android:hint="Description"
+            android:padding="16dp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testName" />
+
+        <EditText
+            android:id="@+id/testFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Upload PDF"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="16dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testDes" />
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/markAndQue"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/testFile" >
+            <EditText
+                android:id="@+id/testMark"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:hint="Mark"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/testNum"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Number of question"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:padding="16dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/testDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Test Date"
+            android:inputType="date"
+            android:padding="16dp"
+            android:layout_marginRight="16dp"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/markAndQue"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/time"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/testDate" >
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:hint="Start Time"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:inputType="time"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="End Time"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:inputType="time"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/round_bg"
+            android:text="Submit"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="#0099FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <ImageView
+            android:id="@+id/select"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/testFile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/testFile"
+            app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

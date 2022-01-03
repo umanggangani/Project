@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addNotice1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--    <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/noticeName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Notice titel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noticeName"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/noticeDes1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Enter Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeName1" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noticeDes"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:textSize="16sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/noticeFile1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginRight="90dp"
+                android:ems="10"
+                android:hint="Add attachment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeDes1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noticeFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/addnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#A44EADFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeFile1" />
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/noticeFile1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/noticeFile1"
+                app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24"
+                tools:ignore="VectorDrawableCompat" />-->
+
+            <EditText
+                android:id="@+id/noticeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints" />
+
+            <EditText
+                android:id="@+id/noticeDes"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_border_des"
+                android:ems="10"
+                android:hint="Description"
+                android:padding="16dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeName" />
+
+            <EditText
+                android:id="@+id/noticeFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Upload PDF"
+                android:layout_marginRight="75dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeDes" />
+
+            <Button
+                android:id="@+id/addNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="@drawable/round_bg"
+                app:backgroundTint="#0099FF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeFile" />
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/noticeFile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/noticeFile"
+                app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24"
+                tools:ignore="VectorDrawableCompat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</FrameLayout>

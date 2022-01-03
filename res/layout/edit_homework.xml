@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/hwName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint=" H.W. Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ehwName"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/hwDes1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwName1" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ehwDes"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/hwDate1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:hint="Due Date"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwDes1">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ehwDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/ehwName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ehwDes"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_border_des"
+        android:ems="10"
+        android:hint="Description"
+        android:padding="16dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ehwName" />
+    <EditText
+        android:id="@+id/ehwDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Due Date"
+        android:inputType="date"
+        android:padding="16dp"
+        android:focusableInTouchMode="false"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ehwDes"
+        tools:ignore="HardcodedText,MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ehwDate">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            app:backgroundTint="#0099FF"
+            android:background="@drawable/round_bg" />
+
+        <Button
+            android:id="@+id/editHwButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            app:backgroundTint="#0099FF"
+            android:background="@drawable/round_bg" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
